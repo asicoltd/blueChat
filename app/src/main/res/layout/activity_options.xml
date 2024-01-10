@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher2_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/optionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupAlgorithm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsTitle"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto"/>
+
+        <RadioButton
+            android:id="@+id/radioManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupManualOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioManual"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioShortDelay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Delay"/>
+
+            <RadioButton
+                android:id="@+id/radioPowerOptimize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power Optimize"/>
+
+            <RadioButton
+                android:id="@+id/radioBalanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balanced"/>
+        </RadioGroup>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupAlgorithm"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnResetBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerTheme"
+        android:layout_marginTop="16dp"
+        android:text="Reset Bluetooth Permission"/>
+</RelativeLayout>
