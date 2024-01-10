@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlueChat"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#00BCD4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnCreateGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Create Group"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/appTitle"/>
+
+    <Button
+        android:id="@+id/btnFindGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Find Group"
+        android:layout_below="@id/btnCreateGroup"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnPersonalMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Personal Message"
+        android:layout_below="@id/btnFindGroup"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnBroadcastMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Broadcast Message"
+        android:layout_below="@id/btnPersonalMessage"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Option"
+        android:layout_below="@id/btnBroadcastMessage"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. About"
+        android:layout_below="@id/btnOption"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7. Exit"
+        android:layout_below="@id/btnAbout"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="125dp"
+        android:layout_height="124dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:src="@mipmap/ic_launcher2_round" />
+</RelativeLayout>

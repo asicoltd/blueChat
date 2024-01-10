@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreateGroupActivity">
+
+    <TextView
+        android:id="@+id/createGroupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Group"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edtGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createGroupTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Group Name"
+        android:minHeight="48dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtGroupName"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Public" />
+
+        <RadioButton
+            android:id="@+id/radioPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Private" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupPrivacy"
+        android:layout_marginTop="16dp"
+        android:hint="PIN (Optional)"
+        android:minHeight="48dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edtMaxMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPin"
+        android:layout_marginTop="16dp"
+        android:hint="Max Members (0 for no limit)"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtMaxMembers"
+        android:layout_marginTop="16dp"
+        android:text="Create Group" />
+</RelativeLayout>
