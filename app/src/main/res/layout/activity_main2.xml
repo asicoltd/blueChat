@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainBackground1"
+    android:background="@color/ic_launcher2_background"
     android:padding="30dp"
-    tools:context=".MainActivity2">
+    tools:context=".matrix_maeny.bluetoothchat.MainActivity2">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/hostBtn"

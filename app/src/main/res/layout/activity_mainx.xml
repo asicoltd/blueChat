@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ic_launcher2_background"
+    android:background="@color/teal_700"
     android:padding="15dp"
-    tools:context=".MainActivity">
+    tools:context=".matrix_maeny.bluetoothchat.MainActivity">
 
 
 
@@ -178,7 +178,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/about_box_background"
+                android:background="@drawable/chat_box_background"
                 android:ems="10"
                 android:hint="@string/enter_message"
                 android:inputType="textPersonName"
@@ -195,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:background="@drawable/list_view_background"
+                android:background="@drawable/scan_btn_background"
                 android:drawableEnd="@drawable/ic_baseline_send_24"
                 android:drawingCacheQuality="auto"
                 android:gravity="center"

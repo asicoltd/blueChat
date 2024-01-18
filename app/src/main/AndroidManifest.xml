@@ -54,8 +54,6 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".matrix_maeny.bluetoothchat.MainActivity2"
             android:theme="@style/AppTheme" />
-        <activity android:name=".matrix_maeny.bluetoothchat.MainActivity3"
-            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
